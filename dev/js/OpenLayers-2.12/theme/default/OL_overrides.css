@@ -1,0 +1,214 @@
+/* OpenLayers overrides */
+
+.geom_btn {
+    background-position: 0 0 !important;
+    background-repeat: no-repeat;
+    border: 0 none;
+	/* outline: 1px dotted gray; */
+	height: 23px !important;
+    width: 24px !important;
+	display: inline-block;
+}
+
+.geom_btn.geom_ON.draw_point {
+	background-image: url("img/draw_point_on.png")!important;
+/* 	background-position: 0 0 !important;
+    background-repeat: no-repeat;
+    border: 0 none;
+	outline: 1px dotted gray;
+	height: 30px !important;
+    width: 30px !important; */
+}
+.geom_btn.geom_OFF.draw_point {
+    background-image: url("img/draw_point_off.png");
+}
+.geom_btn.geom_ON.draw_line {
+    background-image: url("img/draw_line_on.png");
+}
+.geom_btn.geom_OFF.draw_line {
+    background-image: url("img/draw_line_off.png");
+}
+.geom_btn.geom_ON.draw_polygon {
+    background-image: url("img/draw_polygon_on.png");
+}
+.geom_btn.geom_OFF.draw_polygon {
+    background-image: url("img/draw_polygon_off.png");
+}
+
+
+
+.olControlScaleLine {
+    bottom:20px;
+    right:10px;
+    left:auto;
+}
+/* 
+.olControlPanPanel div {
+    height: 18px;
+    width: 18px;
+    cursor: pointer;
+    position: absolute;
+}
+
+.olControlPanPanel .olControlPanNorthItemInactive {
+    background-image: url("img/north-mini.png");
+}
+.olControlPanPanel .olControlPanSouthItemInactive {
+    background-image: url("img/south-mini.png");
+}
+.olControlPanPanel .olControlPanEastItemInactive {
+    background-image: url("img/east-mini.png");
+}
+.olControlPanPanel .olControlPanWestItemInactive {
+    background-image: url("img/west-mini.png");
+} */
+
+.olControlZoomPanel {
+	top: 10px !important;
+}
+.olControlPanel {
+	/* top: -90px !important; */
+}
+.olControlZoomPanel .olControlZoomInItemInactive {
+    background-image: url("img/zoom-plus-mini.png");
+    background-position: 0 0 !important;
+    background-repeat: no-repeat;
+    border: 0 none;
+    height: 21px !important;
+    width: 21px !important;
+    left:-7px;
+    top: 0px !important;
+}
+.olControlZoomPanel .olControlZoomToMaxExtentItemInactive {
+    background-image: url("img/zoom-world-mini.png");
+    background-position: 0 0 !important;
+    background-repeat: no-repeat;
+    border: 0 none;
+    height: 21px !important;
+    width: 21px !important;
+    left:-7px;
+    top: 25px !important;
+}
+.olControlZoomPanel .olControlZoomOutItemInactive {
+    background-image: url("img/zoom-minus-mini.png");
+    background-position: 0 0 !important;
+    background-repeat: no-repeat;
+    border: 0 none;
+    height: 21px !important;
+    width: 21px !important;
+    left:-7px;
+    top: 50px !important;
+}
+
+.olControlPanel .olControlDragPanItemInactive {
+    background-image: url("img/panning-hand-on.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    border: 0 none;
+    cursor: pointer;
+    height: 27px;
+    width: 22px;
+    left:4px;
+    top: 185px !important;
+    position:absolute;
+}
+.olControlPanel .olControlDragPanItemActive {
+    background-image: url("img/panning-hand-off.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    border: 0 none;
+    cursor: pointer;
+    height: 27px;
+    width: 22px;
+    left:4px;
+    top: 185px !important;
+    position:absolute;
+}
+.olControlPanel .olControlZoomBoxItemInactive {
+    background-image: url("img/drag-rectangle-on.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    border: 0 none;
+    cursor: pointer;
+    /* height: 25px;
+    width: 25px;
+    left:4px;
+    top: 215px !important;
+    position:absolute; */
+}
+.olControlPanel .olControlZoomBoxItemActive {
+    background-image: url("img/drag-rectangle-off.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    border: 0 none;
+    cursor: pointer;
+    height: 25px;
+    width: 25px;
+    left:4px;
+    top: 215px !important;
+    position:absolute;
+}
+/* 
+.olControlPanel .olControlNavigationHistoryNextItemActive {
+    left:6px;
+    top: 320px !important;
+    position:absolute;
+
+    height: 25px; width: 25px;
+
+    background-image: url("img/history_next_active.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.olControlPanel .olControlNavigationHistoryNextItemInactive {
+    left:6px;
+    top: 320px !important;
+    position:absolute;
+
+    height: 25px; width: 25px;
+
+    background-image: url("img/history_next_inactive.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.olControlPanel .olControlNavigationHistoryPreviousItemActive {
+    left:6px;
+    top: 355px !important;
+    position:absolute;
+
+    height: 25px; width: 25px;
+
+    background-image: url("img/history_previous_active.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.olControlPanel .olControlNavigationHistoryPreviousItemInactive {
+    left:6px;
+    top: 355px !important;
+    position:absolute;
+
+    height: 25px; width: 25px;
+
+    background-image: url("img/history_previous_inactive.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.SettingsItemInactive {
+    background-image: url("img/settings.png") !important;
+    background-position: 0 0 !important;
+    background-repeat: no-repeat;
+    border: 0 none;
+    height: 21px !important;
+    left: -7px;
+    top: 105px !important;
+    width: 21px !important;
+}
+ */

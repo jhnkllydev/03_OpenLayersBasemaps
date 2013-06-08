@@ -1,0 +1,18 @@
+.olLayerGoogleCopyright {
+    right: 3px;
+    bottom: 2px;
+    left: auto;  
+}
+.olLayerGooglePoweredBy {
+    left: 2px;
+    bottom: 0px !important;
+}
+
+.olLayerGoogleV3.olLayerGoogleCopyright {
+    bottom: 0px !important;
+    left: 0px !important;
+}
+.olLayerGoogleV3.olLayerGooglePoweredBy {
+    bottom: 10px !important;
+}
+

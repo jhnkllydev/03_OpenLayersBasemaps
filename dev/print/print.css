@@ -1,0 +1,146 @@
+/*
+ * the CSS has a lot of contrivances to make the layout fit onto the page properly
+ * You're effectively writing a HTML/CSS page for a new browser, which has some
+ * bizarre behaviors as far as page edges, margins, and absolute positioning.
+ */
+
+.slim {margin:0px; padding:0px;margin-bottom:5px; line-height:14px;}
+input, label { vertical-align: middle; }
+.legend_item { vertical-align: middle; display:inline-block; margin:0px; padding:0px;}
+.swatch_group { vertical-align: middle; display:inline-block; margin:0px; padding:0px;}
+.img_legend { vertical-align: middle; display:inline-block; }
+.leg_swatch_div { vertical-align: middle; display:inline-block; height:14px; width:19px; margin:1px 3px; /* margin-left: 3px; margin-right: 3px; */}
+
+.leg_item_wrapper {margin-top: 10px;};
+
+.legendHeader {
+    font-weight: bold;
+}
+
+label { display: block;}
+
+.slider {display:none;}
+.ui-slider-range {display:none;}
+input {display:none;}
+ 
+
+
+html, button, input, select, textarea, .ui-widget { font-family: 'Lato', sans-serif; color: #505055; }
+        
+@page {
+    margin:0.25in 0.25in 0.25in 0.25in;
+    /* width:768px; */
+    width:100%;
+    height:1028px;
+}
+
+div.page {
+    /* width:768px; */
+    width:100%;
+    height:1015px;
+    padding: 0;
+
+    /* border:1px solid #003300;
+
+    font-family:VeraSerif;
+    font-size:10pt; */
+
+    position:relative;
+}
+
+#header,#titlebar,#footer {
+    /* width:768px; */
+    /* width:100%; */
+    width:576pt;
+    /* display: table-cell; */
+    vertical-align: middle;
+}
+
+#footer {
+    bottom:200px;
+    height:40px;
+}
+
+#header {
+    background-color:#EFEBD0;
+    height:50px;
+    /* width:100%; */
+
+
+
+    /* width:576pt; */
+    width:846px;
+    /* position:absolute;  */
+    left:0; top:0;
+
+    text-align:center;
+}
+
+#logo {
+    float:right;
+    /* height:100px; */
+}
+
+#footer {
+    height:34px;
+    /* width:100%; */
+    position:absolute; left:0; bottom:0;
+
+    /* background-color:#EFEBD0; */
+}
+
+#map_image {
+    
+
+    /* background-color:#EFEBD0;
+    border-top:3px double black;
+    border-bottom:3px double black; */
+
+    /* position:absolute; */
+    left:0;
+    top:100px;
+
+}
+
+#title {
+    /* margin-top:40px; */
+    color:#333;
+    font-size:20px;
+    padding:5px;
+    vertical-align: middle;
+    
+}
+
+#legend {
+    margin-top:10px !important;
+    font-size:11pt;
+}
+
+#legend {
+    white-space:nowrap;
+
+    margin-top:6px;
+    margin-left:25px;
+
+    border-collapse:collapse;
+}
+
+#legend td {
+    width:33%;
+    padding:0 25px 0 0;
+}
+
+#legend td img {
+    vertical-align: bottom;
+    margin-tight:10px;
+}
+
+
+.report_card {
+    display: inline-block;
+    width: 19px;
+    text-align: center;
+    font-family: 'Permanent Marker', sans-serif;
+    font-weight: bold;
+    outline: 1px solid #bbb;
+}
