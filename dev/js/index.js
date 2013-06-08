@@ -2,7 +2,8 @@ var MAP, OSM;
 var SRS_4326 = new OpenLayers.Projection("EPSG:4326");
 var SRS_3857 = new OpenLayers.Projection("EPSG:3857");
 var START_XY = new OpenLayers.LonLat(-118,38).transform(SRS_4326,SRS_3857);
-var START_Z = 3;
+var STOCKTON_XY = new OpenLayers.LonLat(-121,38).transform(SRS_4326,SRS_3857);
+var START_Z = 4;
 
 var BASEMAP_SWATCHES = {};
 
@@ -10,6 +11,7 @@ var BASEMAP_SWATCHES = {};
 $(window).load(function() {
     initMap();
     addBaseSwitcher();
+    initGeolocate();
 });
 
 function initMap(){
@@ -24,7 +26,7 @@ function initMap(){
         }
     }    
 
-    MAP.setCenter(START_XY, START_Z);
+    MAP.setCenter(STOCKTON_XY, 8);
 
 //MAP.addControl(new OpenLayers.Control.LayerSwitcher());
 }

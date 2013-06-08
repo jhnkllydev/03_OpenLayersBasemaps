@@ -1,13 +1,16 @@
-html, body { margin:0px; width:100%; height:100% }
+html, body { margin:0px; width:100%; height:100%;
+    overflow: hidden;
+}
 
 #baseSwitcher {
 	position: absolute;
 	z-index: 900;
 	top: 0px;
 	right: 0px;
+    overflow: auto;
 	/* width: 200px;
 	height: 500px; */
-	outline: 1px solid gold;
+	/* outline: 1px solid gold; */
 }
 
 .baseSwatch {
@@ -15,6 +18,6 @@ html, body { margin:0px; width:100%; height:100% }
 	height:160px;
 	z-index: 901;
 	
-	outline: 1px dotted green;
+	/* outline: 1px dotted green; */
 }
 
