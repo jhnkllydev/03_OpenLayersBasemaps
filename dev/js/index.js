@@ -34,7 +34,7 @@ function initMap(){
 
 function addBaseSwitcher() {
 
-	$('body').append('<div id="baseSwitcher"></div>');
+	//$('body').append('<div id="baseSwitcher"></div>');
 
 	for (var nam in BASEMAPS) {
 		//console.log(nam);
